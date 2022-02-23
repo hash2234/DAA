@@ -1,1 +1,36 @@
+#include <stdio.h>
+//Linear search
 
+int main()
+{
+    int t,i, m=0,n,count;
+    scanf("%d",&t);
+    while(m<=t){
+        count=0;
+       scanf("%d",&n);
+       int arr[n];
+       for(i=0;i<n;i++)
+       {
+           scanf("%d",&arr[i]);
+       }
+       int key;
+       scanf("%d",&key);
+       for(i=0;i<n;i++){
+           count++;
+           if(key==arr[i]){
+           printf("key found\n");
+           printf("Comparisons :%d",count);
+           break;
+         }
+       }
+       if(i==n)
+          {
+            printf("key not found\n");
+            printf("Comparisons %d",count);
+            return 0;
+          }
+         m++;
+         printf("\n");
+    }
+    
+}
