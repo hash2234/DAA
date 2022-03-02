@@ -1,0 +1,35 @@
+#include<stdio.h>
+search(int lw,int up,int key,int arr[])
+
+int main()
+{
+    int up,lw,arr[10],n,i;
+    scanf("%d",%n);
+    up = n-1;
+    lw = 0;
+    for(i=0;i<n;i++){
+        scanf("%d",arr[i]);
+    }
+    printf("Enter the key");
+    scanf("%d",&key);
+    search(lw,up,key,arr[]);
+    
+}
+void search(int lw,int up,int key,int arr[]){
+    int mid(lw + up)/2;
+    c++;
+    if(arr[mid]>key){
+        up = mid-1;
+        search(lw,up,key,arr[]);
+    }
+    else if(arr[mid]<key){
+        lw = mid+1;
+        search(lw,up,key,arr[]);
+    }
+    
+    else
+    {
+        printf("Element found!!");
+        printf("\nComparisons%d",c);
+    }
+}
